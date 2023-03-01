@@ -7,4 +7,3 @@ def get_money():
     return m
 
 # Code
-get_money
