@@ -1,4 +1,3 @@
-
 import Inventory
 
 # Variables
@@ -20,7 +19,7 @@ def choice():
     while True:
         try:
             choice = int(input("Please select the item number you wish to purchase: "))
-            if choice > 0 and choice < len(Inventory.inventory.keys()):
+            if choice > 0 and choice <= len(Inventory.inventory.keys()):
                 return choice
             else:
                 print("Please input a valid choice from the list.")

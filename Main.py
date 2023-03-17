@@ -31,15 +31,14 @@ def main():
             print("Out of stock, try again.")
     print("\n")
     
-    price = Inventory.inventory[][0]
+    price = value_list[user_choice][0]
 
-    if m > price:
+    if m >= price:
         print(f'You have inserted ${m}. Your change is ${m - selected_item_price}.')
+        print("\n")
+        print(f"Thank you for your purchase! Enjoy your {selected_item}!")
     else:
-        print(f'The item is {selected_item_price}! You put in {m}')
-    print("\n")
-
-    # print("Thank you for your purchase! Enjoy your Snickers Bar!")
+        print(f'The item is {selected_item_price}! Put in ${selected_item_price - m} to be able to purchase this item.')
 
 # Code
 main()
