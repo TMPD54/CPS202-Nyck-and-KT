@@ -1,5 +1,12 @@
 # Variables
-inventory = {'Coca Cola':   {'price': 2.0, 'stock': 5}, 
-             'Snickers':    {'price': 1.5, 'stock': 10}, 
-             'Bag of Chips':       {'price': 1.25, 'stock': 7},
-             'Water':       {'price': 1.0, 'stock': 3}}
+inventory = {'Coca Cola':       [2.00, 5], 
+             'Snickers':        [1.50, 0], 
+             'Bag of Chips':    [1.25, 7],
+             'Water':           [1.00, 3]}
+
+# Functions
+def print_inventory():
+    count = 1
+    for key, value in inventory.items():
+        print(f"{count}. {key} ({value[0]}) - {value[1]} left")
+        count += 1
